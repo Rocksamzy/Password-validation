@@ -1,0 +1,53 @@
+  <!DOCTYPE html>
+  <Html lang="en" dir="ltr">
+
+  <Head>
+    <title>Password Validation</title>
+    <link rel="shortcut icon" href="035-flickr.png">
+
+    <!--For English-->
+    <meta charset="utf-8">
+    <!--For Chinese-->
+    <!--<meta charset="BIG5">-->
+    <meta name="title" content="Password Validation">
+    <meta name="description" content="This is an assignment on password validation">
+    <meta name="keywords" content="free science tutorials, free science tutorials in enugu, online science school in enugu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Optional-->
+    <meta name="author" content="rocksamzy">
+  </Head>
+
+    <body>
+
+    <h3>Password Validation</h3>
+
+
+    <div>
+      <fieldset>
+        <legend><h1>Sign In</h1></legend>
+
+      <form action="thanks.html" method="post">
+      <label><h3>Username :</h3></label>
+      <input type="text" name="username" size="50%" autocomplete="off" required>
+
+      <label><h3>Password :</h3></label>
+      <input type="password" name="password" size="50%" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+      title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" autocomplete="off" required>
+
+    <div>
+      <h4>Password must contain the following:</h4>
+      <p><sup>A <b>lowercase</b> letter</sup></p>
+      <p><sup>A <b>capital (uppercase)</b> letter</sup></p>
+      <p><sup>A <b>number</b></sup></p>
+      <p><sup>Minimum <b>8 characters</b></sup></p>
+    </div>
+
+      <input type="submit" value="Sign In">
+
+      </form>
+      </fieldset>
+    </div>
+
+  </body>
+
+  </Html>
